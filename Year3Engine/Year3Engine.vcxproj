@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A651087-26CB-475E-A593-59219C097045}</ProjectGuid>
+    <RootNamespace>Year3Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>\\COMPHOME\homedir%24\x00074993\Desktop\Project3rdYear\trunk\source\Year3\lib;\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3\lib;..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\FreeType\include;\\COMPHOME\homedir%24\x00074993\Desktop\Project3rdYear\trunk\source\Year3;\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimatedPhysicsSprite.h" />
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="BoxPhysicsObject.h" />
+    <ClInclude Include="C2DMatrix.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CirclePhysicsObject.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="ContactListener.h" />
+    <ClInclude Include="DebugDraw.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineFont.h" />
+    <ClInclude Include="FrameRateCounter.h" />
+    <ClInclude Include="GameComponent.h" />
+    <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="HostSocket.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="IP_Address.h" />
+    <ClInclude Include="Keys.h" />
+    <ClInclude Include="MessageDispatcher.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="PhysicsObject.h" />
+    <ClInclude Include="PhysicsSprite.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="TCPSocket.h" />
+    <ClInclude Include="Telegram.h" />
+    <ClInclude Include="Transformations.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimatedPhysicsSprite.cpp" />
+    <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="BoxPhysicsObject.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CirclePhysicsObject.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="ContactListener.cpp" />
+    <ClCompile Include="DebugDraw.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineFont.cpp" />
+    <ClCompile Include="FrameRateCounter.cpp" />
+    <ClCompile Include="GameComponent.cpp" />
+    <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="HostSocket.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="IP_Address.cpp" />
+    <ClCompile Include="MessageDispatcher.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="PhysicsObject.cpp" />
+    <ClCompile Include="PhysicsSprite.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="TCPSocket.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

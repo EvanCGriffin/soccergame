@@ -1,0 +1,17 @@
+﻿Build started 2/15/2013 9:08:11 PM.
+     1>Project "F:\Projects\SDev\Year3Project\trunk\source\Year3\Year3Game\Year3Game.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Year3Game.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Year3Game.vcxproj -> F:\Projects\SDev\Year3Project\trunk\source\Year3\Debug\Year3Game.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Year3Game.unsuccessfulbuild".
+         Touching "Debug\Year3Game.lastbuildstate".
+     1>Done Building Project "F:\Projects\SDev\Year3Project\trunk\source\Year3\Year3Game\Year3Game.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.13

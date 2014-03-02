@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BallCamera.h" />
+    <ClInclude Include="FieldPlayer.h" />
+    <ClInclude Include="FieldPlayerStates.h" />
+    <ClInclude Include="Goal.h" />
+    <ClInclude Include="GoalKeeper.h" />
+    <ClInclude Include="GoalKeeperStates.h" />
+    <ClInclude Include="MainMenuScreen.h" />
+    <ClInclude Include="PausedScreen.h" />
+    <ClInclude Include="PitchBoundary.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Pitch.h" />
+    <ClInclude Include="PitchRegion.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Radar.h" />
+    <ClInclude Include="ResultsScreen.h" />
+    <ClInclude Include="Scoreboard.h" />
+    <ClInclude Include="Smoother.h" />
+    <ClInclude Include="SoccerMatch.h" />
+    <ClInclude Include="SoccerMessages.h" />
+    <ClInclude Include="SteeringBehaviors.h" />
+    <ClInclude Include="SupportSpotCalculator.h" />
+    <ClInclude Include="Team.h" />
+    <ClInclude Include="TeamStates.h" />
+    <ClInclude Include="TestScreen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BallCamera.cpp" />
+    <ClCompile Include="FieldPlayer.cpp" />
+    <ClCompile Include="FieldPlayerStates.cpp" />
+    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="GoalKeeper.cpp" />
+    <ClCompile Include="GoalKeeperStates.cpp" />
+    <ClCompile Include="MainMenuScreen.cpp" />
+    <ClCompile Include="PausedScreen.cpp" />
+    <ClCompile Include="PitchBoundary.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pitch.cpp" />
+    <ClCompile Include="PitchRegion.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Radar.cpp" />
+    <ClCompile Include="ResultsScreen.cpp" />
+    <ClCompile Include="Scoreboard.cpp" />
+    <ClCompile Include="SoccerMatch.cpp" />
+    <ClCompile Include="SteeringBehaviors.cpp" />
+    <ClCompile Include="SupportSpotCalculator.cpp" />
+    <ClCompile Include="Team.cpp" />
+    <ClCompile Include="TeamStates.cpp" />
+    <ClCompile Include="TestScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Year3Engine\Year3Engine.vcxproj">
+      <Project>{8a651087-26cb-475e-a593-59219c097045}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B34F4C8-2D3A-4908-98F8-9CEDEC541394}</ProjectGuid>
+    <RootNamespace>Year3Game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3;..\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3\lib;..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\FreeType\include;\\COMPHOME\homedir%24\x00074993\Desktop\Project3rdYear\trunk\source\Year3;\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;opengl32.lib;glu32.lib;Box2D.lib;freetype248_D.lib;ftgl_static_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>\\COMPHOME\homedir%24\x00074993\Desktop\Project3rdYear\trunk\source\Year3\lib;\\COMPHOME\homedir%24\x00074993\Desktop\Project3rdYear\trunk\source\Year3\Debug;\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3\Debug;\\COMPHOME\homedir%24\x00075859\Desktop\Year 3 Project\trunk\source\Year3\lib;..\lib\;..\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

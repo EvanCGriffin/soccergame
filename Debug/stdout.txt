@@ -1,0 +1,6 @@
+Collision!
+Collision!
+Collision!
+Collision!
+Collision!
+FT_Done_Library: failed to free some faces

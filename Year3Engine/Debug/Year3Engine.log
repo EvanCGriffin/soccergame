@@ -1,0 +1,17 @@
+﻿Build started 2/15/2013 9:08:11 PM.
+     1>Project "F:\Projects\SDev\Year3Project\trunk\source\Year3\Year3Engine\Year3Engine.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Year3Engine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         Year3Engine.vcxproj -> F:\Projects\SDev\Year3Project\trunk\source\Year3\Debug\Year3Engine.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\Year3Engine.unsuccessfulbuild".
+         Touching "Debug\Year3Engine.lastbuildstate".
+     1>Done Building Project "F:\Projects\SDev\Year3Project\trunk\source\Year3\Year3Engine\Year3Engine.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08
